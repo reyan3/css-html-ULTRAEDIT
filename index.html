@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 30px;
+            position: relative;
+            top: -3px;
+        }
+
+        .items {
+            position: relative;
+            right: -190px;
+        }
+
+        .items:hover {
+            color: rgb(157, 0, 255);
+            cursor: pointer;
+        }
+
+        .items.b img {
+            height: 9px;
+            position: relative;
+            bottom: 7px;
+            left: 5px;
+        }
+
+        .imge {
+            font-weight: bolder;
+            border: 2px solid black;
+            border-radius: 854px;
+            height: 40px;
+            width: 37px;
+            position: relative;
+            bottom: -40px;
+            background-color: rgb(247, 231, 140);
+            right: 47px;
+        }
+
+        .a {
+
+            position: relative;
+            left: -228px;
+            font-size: 27px;
+            font-weight: 500;
+            top: -16px;
+        }
+
+        .a p {
+            font-size: 8px;
+            position: relative;
+            right: -30px;
+            top: -7px;
+            font-weight: 300;
+        }
+
+        .items img {
+            height: 3vh;
+        }
+
+        .container {
+            display: grid;
+            width: 65vw;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 35vh);
+            gap: 25px;
+            position: relative;
+            left: 246px;
+            top: 40px;
+        }
+
+        .classitems.first a {
+            position: relative;
+            top: 38px;
+        }
+
+        .classitems.first p {
+            position: relative;
+            top: 20px;
+        }
+
+        .classitems a:hover {
+            background-color: green;
+            cursor: pointer;
+        }
+
+        .classitems {
+            display: grid;
+            border: 1px solid white;
+            border-radius: 10px;
+            justify-content: center;
+            justify-items: center;
+            background-color: #938e8e0f;
+            padding: 20px 0px;
+        }
+
+        .classitems p {
+            text-align: center;
+            font-size: 7px;
+        }
+
+        .classitems .lang {
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        .classitems span {
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        .classitems a {
+            text-decoration: none;
+            background-color: rgb(7 184 7 / 58%);
+            color: white;
+            width: 10vw;
+            padding: 13px 20px;
+            border-radius: 13px;
+            font-weight: 700;
+        }
+
+        @media (max-width:1024px) {
+            .container {
+                display: grid;
+                width: 32vw;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(10, 35vh);
+                gap: 25px;
+                position: relative;
+                left: 362px;
+                top: 40px;
+            }
+            nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            position: relative;
+            top: -7px;
+            right: 190px;
+        }
+
+        .a {
+            position: relative;
+            left: 192px;
+            font-size: 27px;
+            font-weight: 500;
+            top: -16px;
+        }
+        }
+
+        @media (max-width:768px){
+            .container {
+                display: grid;
+                width: 32vw;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(10, 35vh);
+                gap: 25px;
+                position: relative;
+                left: 262px;
+                top: 40px;
+            }
+            nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            position: relative;
+            top: -7px;
+            right: 190px;
+        }
+
+        .a {
+            position: relative;
+            left: 192px;
+            font-size: 27px;
+            font-weight: 500;
+            top: -16px;
+        }
+        }
+
+        @media (max-width:426px){
+            .container {
+                display: grid;
+                width: 32vw;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(10, 35vh);
+                gap: 25px;
+                position: relative;
+                left: 55px;
+                top: 40px;
+            }
+            nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            position: relative;
+            top: -7px;
+            right: 190px;
+        }
+
+        .a {
+            position: relative;
+            left: 192px;
+            font-size: 27px;
+            font-weight: 500;
+            top: -16px;
+        }
+        }
+
+      
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <nav>
+            <div class="a">
+                <div class="imge"><i>UE</i></div>UltraEdit<br>
+                <p>An idea.Inc.Company
+                </p>
+            </div>
+            <div class="items b">Products <img
+                    src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" alt="arrow"></div>
+
+
+            <div class="items b">For business<img
+                    src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" alt="arrow"></div>
+
+            <div class="items b">Resources<img
+                    src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" alt="arrow"></div>
+
+
+            <div class="items b">Support<img src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png"
+                    alt="arrow"></div>
+
+            <div class="items b">Our company<img
+                    src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" alt="arrow"></div>
+
+
+            <div class="items"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMaggbwt89OlF0IVrli4GscPhr4I14GKnQ8w&s">
+            </div>
+
+
+        </nav>
+    </div>
+    <div class="container">
+        <div class="classitems first">
+            <h3>English</h3>
+            <div><a href="./ue_english_64.exe" target="_main">Download 64-bit</a></div>
+            <p><span>SHA256</span><br>55AFE9258051C98CF1A0878015769B5D766A870A2AD125E35EAD75C3B0BA8612<br>5C3B0BA8612
+            </p>
+        </div>
+        <div class="classitems">
+            <h3>Deutsch</h3>
+            <p class="lang">German</p>
+            <div><a href="./ue_english_64.exe" target="_main">Download 64-bit</a></div>
+            <p><span>SHA256</span> <br>4575D10E46FC662B16981232E691F26B1F1B4B641FE93285A8528D7<br>D9A6766FF</p>
+        </div>
+        <div class="classitems">
+            <h3>Italiano
+            </h3>
+            <p class="lang">Italian</p>
+            <div><a href="./ue_english_64.exe" target="_main">Download 64-bit</a></div>
+            <p><span>SHA256</span> <br>3834804571F172E621CE24A6039F6ACCFE9B90D0DE9E78385B200D<br>EA5CC64326</p>
+        </div>
+        <div class="classitems">
+            <h3>Español
+            </h3>
+            <p class="lang">Spanish</p>
+            <div><a href="./ue_english_64.exe" target="_main">Download 64-bit</a></div>
+            <p><span>SHA256</span> <br>06F57A02F88D38ED6EC230CB5ACC56BE2DE0A02D8CA9272EDDD1<br>50745BA39535</p>
+        </div>
+        <div class="classitems">
+            <h3>français
+            </h3>
+            <p class="lang">French</p>
+            <div><a href="./ue_english_64.exe" target="_main">Download 64-bit</a></div>
+            <p><span>SHA256</span> <br>5A9CD26E19EEEDBCCF58F89FD2DB58279E495E790386570A03ED6<br>8FACE568236</p>
+        </div>
+        <div class="classitems">
+            <h3>Português brasileiro
+            </h3>
+            <p class="lang">Brazilian Portuguese</p>
+            <div><a href="./ue_english_64.exe" target="_main">Download 64-bit</a></div>
+            <p><span>SHA256</span> <br>50D1DF777A8B2EBD23AF1A6E2165F7939F16ACE849DA466E2CB7C<br>AFDE35EB885</p>
+        </div>
+        <div class="classitems">
+            <h3>日本語
+            </h3>
+            <p class="lang">Japanese</p>
+            <div><a href="./ue_english_64.exe" target="_main">Download 64-bit</a></div>
+            <p><span>SHA256</span> <br>C9B6A9BCF67E6BF450713EC0FF7E3741DEE9A6A372D1021CE9BED0<br>40308E107B</p>
+        </div>
+        <div class="classitems">
+            <h3>한국어
+            </h3>
+            <p class="lang">Korean</p>
+            <div><a href="./ue_english_64.exe" target="_main">Download 64-bit</a></div>
+            <p><span>SHA256</span> <br>0D717F96F9B00B2DBD140FADE52EA93F919DCDC3AB7FB38759097<br>33F3A01F522</p>
+        </div>
+        <div class="classitems">
+            <h3>中国
+            </h3>
+            <p class="lang">Chinese</p>
+            <div><a href="./ue_english_64.exe" target="_main">Download 64-bit</a></div>
+            <p><span>SHA256</span> <br>036736C19E76367BC0191FEC824736B25F56889AFCDB43FE7A64F5<br>39A23E858E</p>
+        </div>
+        <div class="classitems">
+            <h3>中國
+            </h3>
+            <p class="lang">Traditional Chinese</p>
+            <div><a href="./ue_english_64.exe" target="_main">Download 64-bit</a></div>
+            <p><span>SHA256</span> <br>26B8A888328BCE634DBE1ABA2780600E9AD99395D1781CCA49233<br>AE28BDF1ECE</p>
+        </div>
+    </div>
+</body>
+
+</html>
